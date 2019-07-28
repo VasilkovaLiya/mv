@@ -414,7 +414,8 @@ body, html {
   box-sizing: border-box;
   font-family: "MVideo", 'Arial';
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+  -webkit-overflow-scrolling:touch;}
 
 a {
   display: inline-block;
