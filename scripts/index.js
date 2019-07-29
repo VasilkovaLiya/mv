@@ -57,7 +57,7 @@ function chooseStars() {
 		
 		
 			stars[i].addEventListener('touchstart', function () {
-				console.log(i);
+				alert(i);
 				color(i);
 				starsValue.value = i + 1;           
 			});
