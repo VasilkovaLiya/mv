@@ -12,32 +12,24 @@ $(document).ready(function () {
 //Форма - рейтинг(звездочки)
 chooseStars();
 function chooseStars() {
-    var starsValue = document.getElementById('stars');
+	var starsValue = document.getElementById('stars');
     var stars = document.querySelectorAll('.star');
+	if (document.body.clientWidth > 767) {
+	
+   
 
     var _loop = function _loop(i) {
         moveAndColorStars(i);
         stars[i].addEventListener('mouseout', clearStars);
         stars[i].parentElement.addEventListener('mouseout', clearStars);
-        //stars[i].onclick = function () {
-            //color(i);
-
-            //starsValue.value = i + 1;
-            //stars[i].removeEventListener('mouseout', clearStars);
-            //stars[i].parentElement.removeEventListener('mouseout', clearStars);
-            //stars[i].parentElement.addEventListener('mouseout', checkStars);
-            //stars[i].parentElement.addEventListener('mouseout', checkValue);
-        //};
-	
-	    
-	var event = 'click';
-		if(isMobile.iOS()){
-			alert("ios");
-		event = 'touchstart';
-		}
-		if(isMobile.any()){
-		console.log('mob')
-		}
+		
+		var event = 'click';
+		// if(isMobile.iOS()){
+		// event = 'touchstart';
+		// }
+		// if(isMobile.any()){
+		// console.log('mob')
+		// }
 		
 		stars[i].addEventListener(event, function () {
 			color(i);
@@ -47,18 +39,35 @@ function chooseStars() {
             stars[i].parentElement.removeEventListener('mouseout', clearStars);
             stars[i].parentElement.addEventListener('mouseout', checkStars);
             stars[i].parentElement.addEventListener('mouseout', checkValue);
-		});    
-	    
-	    
-	    
-	    
+		});
+		
+       
     };
 
     for (var i = 0; i < stars.length; i++) {
         _loop(i);
     };
 
-    function checkStars() {
+   
+	} else {
+		
+		
+		
+		 var _loop = function _loop(i) {
+		
+		
+			stars[i].addEventListener('touchstart', function () {
+				console.log(i);
+				color(i);
+				starsValue.value = i + 1;           
+			});
+		 };
+		 for (var i = 0; i < stars.length; i++) {
+        _loop(i);
+		};
+		
+	}
+	 function checkStars() {
         var starClassArr = [];
         for (var i = 0; i < stars.length; i++) {
             starClassArr.push(stars[i].classList.contains('selected-star'));
@@ -105,7 +114,11 @@ function chooseStars() {
             stars[i].classList.remove('selected-star');
         }
     }
+	
 }
+
+
+
 
 //ФОРМА - функционал селектов - выбор продукта, выбор типа бонусной
 formSelect();
