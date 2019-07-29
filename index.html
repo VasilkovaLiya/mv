@@ -9,6 +9,28 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
     <script src="./slick/slick.js" type="text/javascript"></script>
+	  <script>
+	var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+	</script>
     <title>Jacobs</title>
   </head>
   <body>
