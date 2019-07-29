@@ -57,7 +57,7 @@ function chooseStars() {
 		
 		
 			stars[i].addEventListener('touchstart', function () {
-				//alert(i);
+				
 				color(i);
 				starsValue.value = i + 1;           
 			});
@@ -99,11 +99,11 @@ function chooseStars() {
     }
 
     function color(i) {
-	    //alert('func color');
+	   
         for (var j = 0; j < stars.length; j++) {
 
             if (j <= i) {
-		    //alert('j это' + j);
+		  
                 stars[j].classList.add('selected-star');
             } else {
                 stars[j].classList.add('nonselected-star');
