@@ -1256,13 +1256,15 @@ input {
   border: 1px solid #dfceb9;
   width: 660px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+line-height: normal;}
   @media screen and (max-width: 667px) {
     .form__input, select {
       width: 320px; } }
 
 .form__input--dbl {
-  width: 320px; }
+  width: 320px; 
+line-height: normal;}
   @media screen and (max-width: 667px) {
     .form__input--dbl {
       width: 100%;
