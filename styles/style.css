@@ -1174,7 +1174,9 @@ input {
   font-weight: 400;
   padding-left: 15px;
   padding-top: 20px;
-  font-family: 'MVideo'; }
+  font-family: 'MVideo';
+-webkit-user-select: text;
+}
 
 .inputs__list {
   margin: 0 auto;
