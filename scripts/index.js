@@ -50,7 +50,7 @@ function chooseStars() {
 
    
 	} else {
-		
+		alert('менее 1170');
 		
 		
 		 var _loop = function _loop(i) {
