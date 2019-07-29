@@ -1497,6 +1497,14 @@ background-size: 50px;
     /* background-attachment: fixed; */
 background-position: center; }
 
+@media screen and (max-width: 667px) {
+	   .selected-star {
+		  background: url("../images/ystar.png") no-repeat;
+background-size: 30px;
+    background-position: center; 
+	   }
+   }
+
 textarea {
   width: 660px;
   height: 269px;
