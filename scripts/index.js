@@ -14,7 +14,7 @@ chooseStars();
 function chooseStars() {
 	var starsValue = document.getElementById('stars');
     var stars = document.querySelectorAll('.star');
-	if (document.body.clientWidth > 1024) {
+	if (document.body.clientWidth > 1170) {
 	
    
 
