@@ -19,15 +19,38 @@ function chooseStars() {
         moveAndColorStars(i);
         stars[i].addEventListener('mouseout', clearStars);
         stars[i].parentElement.addEventListener('mouseout', clearStars);
-        stars[i].onclick = function () {
-            color(i);
+        //stars[i].onclick = function () {
+            //color(i);
+
+            //starsValue.value = i + 1;
+            //stars[i].removeEventListener('mouseout', clearStars);
+            //stars[i].parentElement.removeEventListener('mouseout', clearStars);
+            //stars[i].parentElement.addEventListener('mouseout', checkStars);
+            //stars[i].parentElement.addEventListener('mouseout', checkValue);
+        //};
+	
+	    
+	var event = 'click';
+		if(isMobile.iOS()){
+		event = 'touchstart';
+		}
+		if(isMobile.any()){
+		console.log('mob')
+		}
+		
+		stars[i].addEventListener(event, function () {
+			color(i);
 
             starsValue.value = i + 1;
             stars[i].removeEventListener('mouseout', clearStars);
             stars[i].parentElement.removeEventListener('mouseout', clearStars);
             stars[i].parentElement.addEventListener('mouseout', checkStars);
             stars[i].parentElement.addEventListener('mouseout', checkValue);
-        };
+		});    
+	    
+	    
+	    
+	    
     };
 
     for (var i = 0; i < stars.length; i++) {
