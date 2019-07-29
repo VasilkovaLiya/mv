@@ -1500,6 +1500,8 @@ background-position: center; }
 @media screen and (max-width: 667px) {
 	   .selected-star {
 		  background: url("../images/ystar.png") no-repeat;
+		   width: 30px;
+      height: 30px;
 background-size: 30px;
     background-position: center; 
 	   }
