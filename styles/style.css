@@ -1175,7 +1175,6 @@ input {
   padding-left: 15px;
   padding-top: 20px;
   font-family: 'MVideo';
--webkit-user-select: text;
 }
 
 .inputs__list {
@@ -1257,9 +1256,7 @@ input {
   border: 1px solid #dfceb9;
   width: 660px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
--webkit-user-select: text;
--webkit-appearance: none;}
+  box-sizing: border-box;}
   @media screen and (max-width: 667px) {
     .form__input, select {
       width: 320px; } }
