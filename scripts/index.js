@@ -32,6 +32,7 @@ function chooseStars() {
 	    
 	var event = 'click';
 		if(isMobile.iOS()){
+			alert("ios");
 		event = 'touchstart';
 		}
 		if(isMobile.any()){
