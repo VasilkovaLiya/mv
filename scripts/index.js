@@ -365,38 +365,4 @@ function moveToElement() {
 
 
 
-//валидация формы
-var btnSumbit = document.getElementById('submit');
-var btnSucceed = document.getElementById('.button--sended');
-var firstInputWrapper = document.querySelector('.inputs__item-dbl');
-var inputForCartNum = document.getElementsByName('num')[0];
-btnSumbit.onclick = function () {
-    var form = document.forms[0];
-    for (var i = 0; i < form.elements.length; i++) {
-        if (form[i].required === true) {
 
-            if (form[i].value === '') {
-                form[i].closest('li').classList.add('nonselected');
-                //form[i].style.border = 'none';
-                form[i].setAttribute('data', 'nonselected');
-                inputForCartNum.style.background = 'none';
-                if (form[i].hasAttribute('class', 'form__input--dbl') && form[i].value === '') {
-
-                    form[i].classList.add('nonselected');
-                    form[i].setAttribute('data', 'nonselected');
-                    firstInputWrapper.style.border = 'none';
-                }
-            }
-            //     else if (form[i].value.search(new RegExp(form[i].pattern)) !== 0){
-            //         form[i].nextElementSibling.style.display = "block";
-
-            // } 
-            var validate = false;
-        }
-        if (validate === true) {
-            //btnSucceed.style.display = 'block';        
-            //btnSumbit.style.display = 'none'; 
-            form.submit();
-        }
-    }
-};
