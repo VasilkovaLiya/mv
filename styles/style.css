@@ -1479,16 +1479,23 @@ z-index:999999;
   height: 50px;
   padding: 0 15px;
   background: url("../images/gstar.png") no-repeat;
-  background-size: contain; }
+  /*background-size: contain;*/
+background-size: 50px;
+    /* background-attachment: fixed; */
+background-position: center;}
   @media screen and (max-width: 667px) {
     .star, nonselected-star {
       width: 30px;
       height: 30px;
+background-size: 30px;
       padding: 0 7px; } }
 
 .selected-star {
   background: url("../images/ystar.png") no-repeat;
-  background-size: contain; }
+   /*background-size: contain;*/
+background-size: 50px;
+    /* background-attachment: fixed; */
+background-position: center; }
 
 textarea {
   width: 660px;
