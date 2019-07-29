@@ -1277,17 +1277,18 @@ line-height: normal;}
   background-position: 98% 50%;
   position: relative; }
 
-a:active, a:focus {
-  outline: none; }
+/* a:active, a:focus { */
+  /* outline: none; } */
 
-input, textarea {
-  outline: none; }
+/* input, textarea { */
+  /* outline: none; } */
 
-input:active, textarea:active {
-  outline: none; }
+/* input:active, textarea:active { */
+  /* outline: none; } */
 
-:focus {
-  outline: none; }
+/* :focus { */
+  /* outline: none; } */
+
 
 input[placeholder] {
   padding-left: 15px;
