@@ -99,9 +99,11 @@ function chooseStars() {
     }
 
     function color(i) {
+	    alert('func color');
         for (var j = 0; j < stars.length; j++) {
 
             if (j <= i) {
+		    alert('j это' + j);
                 stars[j].classList.add('selected-star');
             } else {
                 stars[j].classList.add('nonselected-star');
