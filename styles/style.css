@@ -1257,7 +1257,8 @@ input {
   border: 1px solid #dfceb9;
   width: 660px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+-webkit-user-select: text;}
   @media screen and (max-width: 667px) {
     .form__input, select {
       width: 320px; } }
