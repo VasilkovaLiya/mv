@@ -1160,12 +1160,12 @@ form {
     form {
       margin: 0 auto 150px; } }
 
-fieldset {
+.fieldset {
   border: none;
   border-bottom: 1px solid #ebebeb;
   text-align: center; }
   @media screen and (max-width: 667px) {
-    fieldset {
+    .fieldset {
       width: 320px;
       margin: 0 auto; } }
 
