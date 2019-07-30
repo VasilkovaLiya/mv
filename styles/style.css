@@ -414,10 +414,16 @@ body, html {
   box-sizing: border-box;
   font-family: "MVideo", 'Arial';
   box-sizing: border-box;
-  /*overflow-x: hidden; 
+  overflow-x: hidden; 
   -webkit-overflow-scrolling:touch;
-position:fixed;*/
-}
+  position:fixed;
+  }
+  @media screen and (max-width: 667px) {
+	 body, html {
+		overflow-x: auto;
+		position:static;		
+	 } 
+  }
 
 a {
   display: inline-block;
@@ -1175,8 +1181,7 @@ input {
   font-weight: 400;
   padding-left: 15px;
   padding-top: 20px;
-  font-family: 'MVideo';
-}
+  font-family: 'MVideo'; }
 
 .inputs__list {
   margin: 0 auto;
@@ -1258,14 +1263,14 @@ input {
   width: 660px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-line-height: normal;}
+line-height: normal;  }
   @media screen and (max-width: 667px) {
     .form__input, select {
       width: 320px; } }
 
 .form__input--dbl {
   width: 320px; 
-line-height: normal;}
+  line-height: normal;}
   @media screen and (max-width: 667px) {
     .form__input--dbl {
       width: 100%;
@@ -1289,7 +1294,6 @@ line-height: normal;}
 
 /* :focus { */
   /* outline: none; } */
-
 
 input[placeholder] {
   padding-left: 15px;
@@ -1361,6 +1365,10 @@ input[placeholder] {
 .bonus {
   padding: 15px 0 0 15px;
   text-align: left; }
+  .bonus:hover, .product:hover {
+	  color:#ed1c24;
+	  cursor:pointer;
+  }
 
 .input__div-select {
   height: 65px;
@@ -1477,41 +1485,82 @@ z-index:999999;
     .stars {
       margin: 30px auto 40px; } }
 
+.stars {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto 50px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 667px) {
+    .stars {
+      margin: 30px auto 40px; } }
+
 .star, nonselected-star {
-cursor: pointer;
+cursor:pointer;
 width: 50px;
 height: 50px;
-margin: 0 15px;
-background: #cccccc;
+padding: 0 15px;
+background: url("../images/gstar.png") no-repeat; 
+background-size: 50px;    
+background-position: center;
 }
-
 @media screen and (max-width: 667px) {
 .star, nonselected-star {
-cursor: pointer;
 width: 30px;
 height: 30px;
-margin: 0 7px;
-background: #cccccc;		
-}
-.star img {
-	width: 30px;
-}}
+background-size: 30px;
+padding: 0 7px; } }
 
 .selected-star {
-width: 50px;
-height: 50px;
-margin: 0 15px;
-background: #fab718;
+background: url("../images/ystar.png") no-repeat;
+background-size: 50px;
+background-position: center;
 }
   
 @media screen and (max-width: 667px) {
 .selected-star {
-width: 30px;
-height: 30px;
-margin: 0 7px;
-background: #fab718;}
-}
+background: url("../images/ystar.png") no-repeat;
+background-size: 30px;
+background-position: center;}}	  
+	  
+/* .star, nonselected-star { */
+/* cursor: pointer; */
+/* width: 50px; */
+/* height: 50px; */
+/* margin: 0 15px; */
+/* background: #cccccc; */
+/* } */
 
+/* @media screen and (max-width: 667px) { */
+/* .star, nonselected-star { */
+/* cursor: pointer; */
+/* width: 30px; */
+/* height: 30px; */
+/* margin: 0 7px; */
+/* background: #cccccc;		 */
+/* } */
+/* .star img { */
+	/* width: 30px; */
+/* }} */
+
+/* .selected-star { */
+/* width: 50px; */
+/* height: 50px; */
+/* margin: 0 15px; */
+/* background: #fab718; */
+/* } */
+  
+/* @media screen and (max-width: 667px) { */
+/* .selected-star { */
+/* width: 30px; */
+/* height: 30px; */
+/* margin: 0 7px; */
+/* background: #fab718;} */
+/* } */
+  
 
 textarea {
   width: 660px;
@@ -1583,11 +1632,10 @@ input[type="submit"] {
   position: relative;
   z-index: 50;
   cursor: pointer;
-  width: 320px; 
+  width: 320px;
 -webkit-appearance: none;
  -moz-appearance: none;
- appearance: none;
-}
+ appearance: none;  }
 
 input[data=data-num]::-webkit-input-placeholder {
   font-size: 24px; }
