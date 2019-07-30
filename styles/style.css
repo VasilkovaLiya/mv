@@ -410,8 +410,7 @@ a {
 html {
  height: 100%;
  width: 100%;	
-position:fixed;
--webkit-overflow-scrolling:touch;	
+position:fixed;	
 }
 body {
 height: 100%;
@@ -420,7 +419,6 @@ width: 100%;
 box-sizing: border-box;
 font-family: "MVideo", 'Arial';
 position:sticky;
--webkit-overflow-scrolling:touch;
 }
   
 .wrapper {
