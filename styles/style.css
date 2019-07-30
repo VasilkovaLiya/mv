@@ -408,26 +408,26 @@ a {
   font-style: normal; }
 
 body, html {
-  height: 100%;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "MVideo", 'Arial'; 
+height: 100%;
+width: 100%;
+-webkit-box-sizing: border-box;
 box-sizing: border-box;
-  overflow-x: hidden; 
-  -webkit-overflow-scrolling:touch;
-  position:fixed;
-  }
-  @media screen and (max-width: 667px) {
-	 body, html {
+font-family: "MVideo", 'Arial'; 
+box-sizing: border-box; 
+}
+  @media screen and (min-width: 668px) {
+	body, html {
 	height: 100%;
-  	width: 100%;
-  	-webkit-box-sizing: border-box;
-  	box-sizing: border-box;
-  	font-family: "MVideo", 'Arial'; 
-	box-sizing: border-box;  		
-	 } 
-  }
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "MVideo", 'Arial'; 
+	box-sizing: border-box;
+	overflow-x: hidden; 
+	-webkit-overflow-scrolling:touch;
+	position:fixed;
+	} 
+}
 
 a {
   display: inline-block;
