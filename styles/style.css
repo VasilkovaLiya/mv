@@ -407,26 +407,23 @@ a {
   font-weight: normal;
   font-style: normal; }
 
-body, html {
+html {
+ height: 100%;
+ width: 100%;	
+}
+body {
 height: 100%;
 width: 100%;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
-font-family: "MVideo", 'Arial'; 
-box-sizing: border-box; 
+font-family: "MVideo", 'Arial';  
 }
-  @media screen and (min-width: 668px) {
-	body, html {
-	height: 100%;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-family: "MVideo", 'Arial'; 
-	box-sizing: border-box;
-	overflow-x: hidden; 
-	-webkit-overflow-scrolling:touch;
-	position:fixed;
-	} 
+  
+.wrapper {
+overflow-x: hidden;	
+height: 100vh;
+position: fixed;
+width:100vw;	
 }
 
 a {
