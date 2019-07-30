@@ -416,7 +416,8 @@ height: 100%;
 width: 100%;
 -webkit-box-sizing: border-box;
 box-sizing: border-box;
-font-family: "MVideo", 'Arial';  
+font-family: "MVideo", 'Arial';
+position:fixed;
 }
   
 .wrapper {
@@ -1871,10 +1872,10 @@ input[data=nonselected]::placeholder {
   @media screen and (max-width: 1024px) {
     .parallax--first {
       top: 85%; } }
- @media screen and (max-width: 667px) {
+ /*@media screen and (max-width: 667px) {
 	 .parallax--first {
 	 display:none;
-	 }}
+	 }}*/
 
 .parallax--steps {
   top: 180px; }
@@ -1903,7 +1904,8 @@ input[data=nonselected]::placeholder {
       width: 1100px;
       margin-left: -550px;
       top: 450px;
-	  display:none;} }
+	  /*display:none;*/
+	  } }
 
 .parallax--footer {
   top: -100px;
@@ -1929,7 +1931,8 @@ input[data=nonselected]::placeholder {
       width: 280%;
       margin-left: -60%;
       top: -80px; 
-	  display:none;} }
+	  /*display:none;*/
+	  } }
 
 .parallax--form {
   top: 85%;
@@ -1941,7 +1944,8 @@ input[data=nonselected]::placeholder {
   @media screen and (max-width: 667px) {
     .parallax--form {
       width: 650px;
-	  display:none;} }
+	  /*display:none;*/
+	  } }
 
 .parallax-layer {
   position: absolute; }
