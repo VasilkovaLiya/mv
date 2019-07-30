@@ -412,10 +412,22 @@ body, html {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "MVideo", 'Arial';
-  box-sizing: border-box;  
+  font-family: "MVideo", 'Arial'; 
+box-sizing: border-box;
+  overflow-x: hidden; 
+  -webkit-overflow-scrolling:touch;
+  position:fixed;
   }
- 
+  @media screen and (max-width: 667px) {
+	 body, html {
+	height: 100%;
+  	width: 100%;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+  	font-family: "MVideo", 'Arial'; 
+	box-sizing: border-box;  		
+	 } 
+  }
 
 a {
   display: inline-block;
