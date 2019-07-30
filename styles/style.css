@@ -411,6 +411,7 @@ html {
  height: 100%;
  width: 100%;	
 position:fixed;
+-webkit-overflow-scrolling:touch;	
 }
 body {
 height: 100%;
@@ -419,13 +420,15 @@ width: 100%;
 box-sizing: border-box;
 font-family: "MVideo", 'Arial';
 position:sticky;
+-webkit-overflow-scrolling:touch;
 }
   
 .wrapper {
 overflow-x: hidden;	
 height: 100vh;
 position: fixed;
-width:100vw;	
+width:100vw;
+-webkit-overflow-scrolling:touch;
 }
 
 a {
